@@ -1,0 +1,21 @@
+{
+    "user1":{
+        "ID" : 8442,
+        "firstName":"Shibu",
+        "lastName":"Shrestha",
+        "address":"Samakshushi, Atmagyan"
+    },
+    "user2":{
+        "ID" : 8446,
+        "firstName":"Boby",
+        "lastName":"Shrestha",
+        "address":"Sydney, Rockdale"
+    },
+    "user3":{
+        "ID" : 8449,
+        "firstName":"Bikash",
+        "lastName":"Aryal",
+        "address":"Narayanthan"
+    }
+
+}

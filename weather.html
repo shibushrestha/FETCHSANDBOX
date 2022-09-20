@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <button id="getData">Get data</button>
+        <p id="rawHTML"></p>
+        <script async defer>
+            document.getElementById('getData').addEventListener('click', getData);
+            function getData(){
+                
+                fetch('http://api.openweathermap.org/data/2.5/weather/' + 
+                    new URLSearchParams({'q':'kathmandu','appid':'b770d3b0b1987f6f2afbaecf2bbcff71','units':'metric'})
+                )
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data)
+                })
+                
+            }
+
+        </script>
+    </body>
+</html>
